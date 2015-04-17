@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *SecondTickNotification = @"secondTickNotification";
+static NSString *RoundsCompleteNotification = @"roundCompleteNotification";
+static NSString *NewRoundNotification = @"newRoundNotification";
+
+
 @interface Timer : NSObject
+
+@property (assign, nonatomic) NSInteger minutes;
+@property (assign, nonatomic) NSInteger seconds;
+
++ (Timer *)sharedInstance;
+
+-(void)startTimer;
+-(void)cancelTimer;
+
+
 
 @end
