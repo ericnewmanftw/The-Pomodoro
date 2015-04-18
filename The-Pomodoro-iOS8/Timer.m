@@ -24,7 +24,7 @@
         sharedInstance = [Timer new];
         
         //code for testing Timer
-        // sharedInstance.minutes = 5;
+        sharedInstance.minutes = 5;
         // sharedInstance.seconds = 10;
         
     });
